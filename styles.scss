@@ -1,0 +1,327 @@
+$mainFont: 'Orbitron', sans-serif;
+$altFont: 'Open Sans', sans-serif;
+$gold: #FFE419;
+$white: #FDFFFC;
+$black: #000;
+$grey: #A9A9A9;
+$darkGrey: #202020;
+$oBlack: rgba(0,0,0,0.5);
+$text-shadow: 0 0 5px $black;
+body{
+	height: 100%;
+	font-size: 15px;
+	font-family: $mainFont !important;
+	overflow-x: hidden;
+}
+.wrapper{
+	margin: 0 200px;
+	@media screen and(max-width: 991px){
+		margin: 0 30px;
+		text-align: center;
+	}
+}
+.full-wrapper{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+.content{
+	background: $oBlack;
+	padding: 150px;
+	@media screen and(max-width: 991px){
+		padding: 25px 0px;
+	}
+	h2{
+		text-shadow: $text-shadow;
+		color:$gold;
+	}
+	p{
+		text-shadow: $text-shadow;
+		color:$white;
+	}
+}
+.signinform, .registerform{
+	border: 1px solid $grey;
+	border-radius: 5px;
+}
+.success{
+	color:green;
+}
+.error{
+	color:red;
+}
+:focus{
+	outline:none !important;
+}
+.default{
+	background: $darkGrey;
+	color:$white;
+}
+.banner{
+	background-size: cover;
+	background-repeat:no-repeat;
+	background-attachment: fixed;
+}
+/************************************Navbar************************************/
+
+.navbar{
+	background: $oBlack;
+	 .navbar-toggler{
+		color:$white;
+		font-size: 15px;
+
+		.fa-caret-down{
+			vertical-align: -5%;
+			font-size: 22px;
+		}
+		&:hover{
+			color:$gold;
+		}
+
+	}
+
+	ul{
+		padding: 0px;
+		li{
+			padding: 0px 5px;
+			@media screen and(max-width: 991px){
+				border:none;
+			}
+			a{
+				color:$white;
+				text-shadow: $text-shadow;
+				border-top:2px solid $white;
+				border-bottom: 2px solid transparent;
+				transition: 0.2s ease-in-out;
+				@media screen and (max-width: 991px){
+					border: none;
+				}
+				&:hover{
+					color:$gold;
+					border-top: 2px solid transparent;
+					border-bottom: 2px solid $gold;
+					@media screen and (max-width: 991px){
+					border: none;
+				}
+				}
+			}
+		}
+	}
+
+	#rmlLogo{
+		width: 200px;
+	}
+
+}
+
+
+/*****************************************Home*******************************/
+
+.home-banner{
+	background-image: url('images/background4.jpg');
+	background-position: top center;
+
+	.content{
+		padding: 200px auto;
+	}
+
+	.btn{
+		background-color: transparent;
+		border: 2px solid $gold;
+		font-weight: 400;
+		color:$gold;
+		box-shadow: $text-shadow;
+		&:hover{
+			background: $gold;
+			color:$black;
+		}
+	}
+}
+
+/*****************************************Intro********************************/
+
+.intro{
+	padding: 100px 0px;
+	background: $gold;
+	color: $black;
+	h2{
+		border-bottom: 2px solid $black;
+	}
+	.fa, .far{
+		font-size: 50px;
+	}
+	.btn{
+		background-color: transparent;
+		border: 2px solid $black;
+		font-weight: 400;
+		color:$black;
+		box-shadow: $text-shadow;
+		&:hover{
+			background: $black;
+			color:$gold;
+		}
+	}
+
+
+}
+
+/****************************************Info***************************************/
+
+.info{
+	background-image: url("images/background4.jpg");
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	.info-content{
+		padding: 150px;
+		background-color: $oBlack;
+		text-shadow: $text-shadow;
+		h2{
+			color:$gold;
+			text-shadow: $text-shadow;
+		}
+		@media screen and(max-width: 991px){
+			padding: 25px 0px;
+		}
+	}
+		.btn{
+		background-color: transparent;
+		border: 2px solid $gold;
+		font-weight: 400;
+		color:$gold;
+		box-shadow: $text-shadow;
+		text-shadow: $text-shadow;
+		&:hover{
+			background: $gold;
+			color:$black;
+			text-shadow: $text-shadow;
+		}
+	}
+}
+
+/***************************************Services*******************************/
+.services-banner{
+	background-image: url("images/background2.png");
+}
+
+.services{
+	background:$gold;
+	color:$black;
+
+	.row{
+	padding: 200px;
+	@media screen and (max-width: 991px){
+		padding: 100px 20px;
+		}
+	}
+
+	.card{
+		border:none;
+
+		.card-header{
+			background:black;
+			color:$gold;
+		}
+
+		.card-body{
+			background:$darkGrey;
+			color:$white;
+		}
+	}
+}
+/***************************************About**********************************/
+.about-banner{
+	background-image: url("images/background3.png");
+}
+.profiles{
+	padding: 100px 0;
+	background: $gold;
+	color:$black;
+
+	@media screen and(max-width: 991px){
+		padding: 100px 20px;
+		.fa-user{
+			padding-bottom: 50px;
+		}
+		.col-md-8{
+			text-align: center;
+		}
+	}
+	h2{
+		font-weight: bold;
+	}
+
+	.fa-user{
+		font-size: 200px;
+	}
+}
+
+/***************************************Contact********************************/
+.contact-banner{
+	background-image: url("images/background4.jpg");
+	.contact-info{
+		border-right: 1px inset $darkGrey;
+		a{
+			text-decoration: none;
+			color:$black;
+			font-size:40px;
+			span{
+				font-size:20px;
+			}
+		}
+	}
+		h2, p{
+			color:$black;
+			text-shadow: none;
+		}
+		label{
+			color:$black;
+		}
+	.row{
+		background: $gold;
+		padding: 50px;
+		border-radius: 10px;
+	}
+}
+
+/***************************************Footer*********************************/
+
+.footer{
+	padding-top: 20px;
+	background: $black;
+	color:$white;
+	i{
+		padding: 10px;
+		font-size: 55px;
+		color:$white;
+		&:hover{
+			color:$gold;
+		}
+	}
+	h4{
+		border-bottom: 1px solid $white;
+		color:$gold;
+	}
+	ul li a{
+		color:$white;
+		&:hover{
+			color:$gold;
+			text-decoration: none;
+		}
+	}
+	textarea, input{
+		background: transparent;
+		border:2px solid $white;
+		color:$white;
+		&:focus{
+			background: transparent;
+			border:2px solid $gold;
+			color:$white;
+			outline: none;
+		}
+	}
+	button{
+		color:$black;
+		background: $white;
+	}
+}
