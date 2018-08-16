@@ -1,4 +1,4 @@
-<?php 
+<?php
 	$pagename="Services";
 	require_once 'header.inc.php';
 ?>
@@ -28,13 +28,11 @@
 				<div class="card">
 
 					<a class="serv" data-toggle="collapse" data-target="#int-serv1" aria-exapnded="true" aria-controls="int-serv1">
-
 						<div class="card-header" id="int-serv1-heading">
 							<h4>
 								Shampoo
 							</h4>
 						</div>
-
 					</a>
 
 					<div id="int-serv1" class="collapse show" aria-labelledby="int-serv1-heading" data-parent="#int-accord">
@@ -141,7 +139,7 @@
 			<h2>Other Services</h2>
 			<p>The exterior is the wow factor. We strive for that like new shine everytime. Check out some of our exterior packages!</p>
 		</div>
-		
+
 		<div class="col-md-4 mx-auto">
 
 			<div id="pack-accord">
@@ -178,6 +176,6 @@
 </section>
 
 
-<?php 
+<?php
 	require_once 'footer.inc.php';
 ?>

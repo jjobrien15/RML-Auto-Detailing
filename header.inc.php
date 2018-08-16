@@ -8,6 +8,9 @@
 
 <title>RML | <?php echo $pagename;?></title>
 
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <link rel="shortcut icon" href="images/RMLIcon.ico" type="image/x-icon">
 
 <link rel="stylesheet" type="text/css" href="styles.min.css"/>
@@ -29,3 +32,7 @@
 
 </head>
 <body class="default">
+<div class="social-bar" id="social-bar">
+	<div class="social-icon" id="social-icon"><i class="fab fa-facebook-square"></i></div>
+	<div class="social-icon" id="social-icon"><i class="fab fa-instagram"></i></div>
+</div>
