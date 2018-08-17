@@ -33,6 +33,6 @@
 </head>
 <body class="default">
 <div class="social-bar" id="social-bar">
-	<div class="social-icon" id="social-icon"><i class="fab fa-facebook-square"></i></div>
-	<div class="social-icon" id="social-icon"><i class="fab fa-instagram"></i></div>
+	<a href="#" class="social-icon mx-auto" id="social-icon"><i class="fab fa-facebook-f"></i></a>
+	<a href="#" class="social-icon mx-auto" id="social-icon"><i class="fab fa-instagram"></i></a>
 </div>

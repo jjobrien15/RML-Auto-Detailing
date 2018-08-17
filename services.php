@@ -7,10 +7,12 @@
 	<?php require_once "nav.inc.php"; ?>
 
 	<div class="content">
-		<div class="col-md-10 mx-auto">
+		<div class="inner-content">
+		<div class="col-md-8 mx-auto">
 			<h2>What We Do</h2>
 			<p>When it comes to cars, we at RML Auto Detaling know how delicate the process of cleaning a car can be. From the classics and luxury, to sports cars and your everyday driver, we can handle it all and will take every measure neccesary to make sure your car looks brand new. Scroll below to find a package that best suits your detailing needs.</p>
 		</div>
+	</div>
 	</div>
 
 </section>
@@ -26,72 +28,48 @@
 			<div id="int-accord">
 
 				<div class="card">
-
 					<a class="serv" data-toggle="collapse" data-target="#int-serv1" aria-exapnded="true" aria-controls="int-serv1">
 						<div class="card-header" id="int-serv1-heading">
-							<h4>
-								Shampoo
-							</h4>
+							<h4>Shampoo</h4>
 						</div>
 					</a>
-
 					<div id="int-serv1" class="collapse show" aria-labelledby="int-serv1-heading" data-parent="#int-accord">
-
 						<div class="card-body">
-							<p>Shampooing</p>
-							<strong class="float-right">&dollar; 50</strong>
+							<p>Shampooing
+								<br />
+								<strong class="float-right">&dollar; 50</strong>
+							</p>
 						</div>
-
 					</div>
-
 				</div><!-- End Card -->
 
 				<div class="card">
-
 					<a class="serv" data-toggle="collapse" data-target="#int-serv2" aria-exapnded="true" aria-controls="int-serv2">
-
 						<div class="card-header" id="int-serv2-heading">
-							<h4>
-								Title here
-							</h4>
+							<h4>Title here</h4>
 						</div>
-
 					</a>
-
 					<div id="int-serv2" class="collapse" aria-labelledby="int-serv2-heading" data-parent="#int-accord">
-
 						<div class="card-body">
 							<p>Whatever else we need should go here</p>
 						</div>
-
 					</div>
-
 				</div><!-- End Card -->
 
 				<div class="card">
-
 					<a class="serv" data-toggle="collapse" data-target="#int-serv3" aria-exapnded="true" aria-controls="int-serv3">
-
 						<div class="card-header" id="int-serv3-heading">
-							<h4>
-								Title here
-							</h4>
+							<h4>Title here</h4>
 						</div>
-
 					</a>
 
 					<div id="int-serv3" class="collapse" aria-labelledby="int-serv3-heading" data-parent="#int-accord">
-
 						<div class="card-body">
 							<p>Whatever else we need should go here</p>
 						</div>
-
 					</div>
-
 				</div><!-- End Card -->
-
 			</div>
-
 		</div>
 	</div><!-- End Row -->
 

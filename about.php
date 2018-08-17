@@ -1,15 +1,17 @@
-<?php 
+<?php
 	$pagename="About";
 	require_once 'header.inc.php';
 ?>
 <section class="banner about-banner">
 	<?php require_once "nav.inc.php"; ?>
  <div class="content">
- 	<div class="col-md-10 mx-auto text-center">
-		<h2>Meet the crew</h2>
-		<p>Our passion for cars does not even begin to describe why we do what we do. We beleive keeping a car looking new is important in both health of the car and the owner. A clean car means a happy owner. This is why our attention to detail will forever out-weigh our competitors. Here you will be able to read about everyone here are RML. We wouldn't want someone we dont know putting their hands on our car, so why should you? Scroll to read about us.
-		</p>
-	</div>
+	 <div class="inner-content">
+		 	<div class="col-md-8 mx-auto text-center">
+				<h2>Meet the crew</h2>
+				<p>Our passion for cars does not even begin to describe why we do what we do. We beleive keeping a car looking new is important in both health of the car and the owner. A clean car means a happy owner. This is why our attention to detail will forever out-weigh our competitors. Here you will be able to read about everyone here are RML. We wouldn't want someone we dont know putting their hands on our car, so why should you? Scroll to read about us.
+				</p>
+			</div>
+		</div>
 </div>
 </section>
 
@@ -26,6 +28,6 @@
 	</div>
 </section>
 
-<?php 
+<?php
 	require_once 'footer.inc.php';
 ?>

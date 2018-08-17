@@ -6,13 +6,21 @@ $black: #000;
 $grey: #A9A9A9;
 $darkGrey: #202020;
 $oBlack: rgba(0,0,0,0.5);
-$text-shadow: 2px 2px 3px $oBlack;
+$shadow: 2px 2px 3px $oBlack;
 
 body{
 	height: 100%;
 	width: 100vw;
 	font-size: 15px;
 	font-family: $mainFont !important;
+	h2{
+		text-shadow: $shadow;
+		color:$gold !important;
+	}
+	p{
+		text-shadow: $shadow;
+		color:$white;
+	}
 }
 .wrapper{
 	margin: 0 200px;
@@ -25,27 +33,24 @@ body{
 	margin: 0;
 	padding: 0;
 }
+.black-background{
+	background: $oBlack;
+	height: 100%;
+}
 .content{
 	background: $oBlack;
 	height: 100%;
-.inner-content{
-	height: 100%;
-	transform: translateY(40%);
-	@media screen and(max-width: 720px){
-		transform: translateY(20%);
+	.inner-content{
+		height: 100%;
+		transform: translateY(40%);
+		@media screen and(max-width: 720px){
+			transform: translateY(20%);
+		}
 	}
 }
-	h2{
-		text-shadow: $text-shadow;
-		color:$gold;
-	}
-	p{
-		text-shadow: $text-shadow;
-		color:$white;
-	}
 
-}
-.signinform, .registerform{
+.signinform,
+.registerform{
 	border: 1px solid $grey;
 	border-radius: 5px;
 }
@@ -66,6 +71,7 @@ body{
 	background-size: cover;
 	background-repeat:no-repeat;
 	background-attachment: fixed;
+	background-position: top center;
 	height: 100vh;
 }
 #rmlLogo{
@@ -73,25 +79,23 @@ body{
 }
 /************************************Social-Bar********************************/
 .social-bar{
+	display: flex;
+	flex-direction: column;
 	position: fixed;
 	left: 0;
 	top: 40%;
 	padding: 20px 10px;
 	background: $gold;
 	border-radius: 0 5px 5px 0;
-	border: 1px solid $black;
-	box-shadow: $text-shadow;
+	border:none;
+	box-shadow: $shadow;
 	z-index: 100;
 	.social-icon{
-		font-size: 2.5rem;
-		color: $black;
-	}
-	.fa-instagram{
 		font-size: 2rem;
-		padding: 4px;
-		border-radius: 5px;
-		color:$gold;
-		background: $black;
+		color: $black;
+		&:hover{
+			color:$white;
+		}
 	}
 }
 /************************************Navbar************************************/
@@ -155,8 +159,6 @@ body{
 
 .home-banner{
 	background-image: url('images/background4.jpg');
-	background-position: top center;
-
 	.btn{
 		background-color: $oBlack;
 		font-weight: 400;
@@ -172,9 +174,26 @@ body{
 /*****************************************Intro********************************/
 
 .intro{
-	padding: 100px 0px;
-	background: $gold;
+	background-image: url("images/background4.jpg");
+	background-size: cover;
+	background-repeat:no-repeat;
+	background-attachment: fixed;
+	background-position: top center;
 	color: $black;
+	.card{
+		background: $gold;
+		max-width: 30rem !important;
+		padding: 2rem;
+		box-shadow: $shadow;
+		h2{
+			color:$black !important;
+		}
+		p{
+			color:$black !important;
+			text-shadow: none;
+			height: 12.5rem;
+		}
+	}
 	.fa, .far{
 		font-size: 50px;
 	}
@@ -183,14 +202,14 @@ body{
 		border: 2px solid $black;
 		font-weight: 400;
 		color:$black;
-		box-shadow: $text-shadow;
+		box-shadow: $shadow;
+		width: 12.5rem;
+		margin: 0 auto;
 		&:hover{
 			background: $black;
 			color:$gold;
 		}
 	}
-
-
 }
 
 /****************************************Info***************************************/
@@ -201,12 +220,13 @@ body{
 	background-size: cover;
 	background-repeat: no-repeat;
 	.info-content{
-		padding: 150px;
+		padding: 300px 0;
+		height: inherit;
 		background-color: $oBlack;
-		text-shadow: $text-shadow;
+		text-shadow: $shadow;
 		h2{
 			color:$gold;
-			text-shadow: $text-shadow;
+			text-shadow: $shadow;
 		}
 		@media screen and(max-width: 991px){
 			padding: 25px 0px;
@@ -217,12 +237,12 @@ body{
 		border: 2px solid $gold;
 		font-weight: 400;
 		color:$gold;
-		box-shadow: $text-shadow;
-		text-shadow: $text-shadow;
+		box-shadow: $shadow;
+		text-shadow: $shadow;
 		&:hover{
 			background: $gold;
 			color:$black;
-			text-shadow: $text-shadow;
+			text-shadow: $shadow;
 		}
 	}
 }
@@ -235,7 +255,13 @@ body{
 .services{
 	background:$gold;
 	color:$black;
-
+	h2{
+		color:$black !important;
+	}
+	p{
+		color:$black !important;
+		text-shadow: none;
+	}
 	.row{
 	padding: 200px;
 	@media screen and (max-width: 991px){
@@ -245,15 +271,35 @@ body{
 
 	.card{
 		border:none;
-
 		.card-header{
 			background:black;
 			color:$gold;
+			border-radius: 0;
 		}
-
 		.card-body{
 			background:$darkGrey;
 			color:$white;
+			height: auto;
+			p{
+				color:$white !important;
+			}
+			strong{
+				color:$gold;
+			}
+		}//End card-body
+		&:first-child{
+			.card-header{
+				border-radius: 5px 5px 0 0;
+			}
+		}
+		&:last-child{
+			background: transparent;
+			.card-header{
+				border-radius: 0 0 5px 5px;
+			}
+			.card-body{
+				border-radius: 0 0 5px 5px;
+			}
 		}
 	}
 }
@@ -287,8 +333,17 @@ body{
 /***************************************Contact********************************/
 .contact-banner{
 	background-image: url("images/background4.jpg");
+	.inner-content{
+		transform: translateY(30%);
+		&:hover{
+			transform: translateY(10%);
+		}
+	}
 	.contact-info{
 		border-right: 1px inset $darkGrey;
+		@media screen and(max-width: 720px){
+			border-right: none;
+		}
 		a{
 			text-decoration: none;
 			color:$black;
@@ -299,7 +354,7 @@ body{
 		}
 	}
 		h2, p{
-			color:$black;
+			color:$black !important;
 			text-shadow: none;
 		}
 		label{
