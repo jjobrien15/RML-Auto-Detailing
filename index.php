@@ -56,7 +56,7 @@
 				<p>Acheiving the perfect shine on your automobile is not easy. Thats where we come in. Each and every car we lay our hands on is treated as delicatley as our own. At RML Auto Detailing, that perfect shine is exactly what we are after. Beginning at paint correction all the way to the caring touch of a hand-wash, we deliver that new car look you are after. To top it all off, we will come to you. Right in your own driveway, your car will transform to brand new.</p>
 				<a href="setappointment.php"><div class="btn">Schedule Appointment</div></a>
 			</div>
-			<div class="col-md-3 mx-auto">
+			<div class="col-md-3 mx-auto my-auto">
 				<img class="img-fluid" src="images/car-wash-icon.png" alt="That's right! We come to you!"/>
 			</div>
 		</div>

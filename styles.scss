@@ -163,7 +163,7 @@ body{
 		background-color: $oBlack;
 		font-weight: 400;
 		color:$gold;
-		//border: 1px solid rgba(255,255,255, 0.2);
+		border: 1px inset rgba(255,255,255, 0.3);
 		&:hover{
 			background: $gold;
 			color:$black;
@@ -232,17 +232,14 @@ body{
 			padding: 25px 0px;
 		}
 	}
-		.btn{
-		background-color: transparent;
-		border: 2px solid $gold;
+	.btn{
+		background-color: $oBlack;
 		font-weight: 400;
 		color:$gold;
-		box-shadow: $shadow;
-		text-shadow: $shadow;
+		border: 1px inset rgba(255,255,255, 0.2);
 		&:hover{
 			background: $gold;
 			color:$black;
-			text-shadow: $shadow;
 		}
 	}
 }
